@@ -1,0 +1,1 @@
+Done as a learner project to help me build ERC20 tokens in future projects.
