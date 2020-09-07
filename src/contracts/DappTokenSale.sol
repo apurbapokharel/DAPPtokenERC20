@@ -51,7 +51,6 @@ contract DappTokenSale{
         require(msg.sender == admin,'msg.sender is not the admin');
         require(tokenContract.transfer(admin, tokenContract.balanceOf(address(this)), address(this)),'unable to transfer remaining token to admin');
 
-        //selfdistruct garna ni milcha
         //contract cannot be deleted in the BC but the varibales will be reset 
         //thats the way to selfdestruct in solidity
         //selfdestruct(admin);

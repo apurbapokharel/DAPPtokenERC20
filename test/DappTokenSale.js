@@ -56,20 +56,6 @@ contract('DappTokenSale', function(accounts){
 //   assert.equal(newSellerBalance.toString(), expectedBalance.toString())
 // })
 
-//self written test which always fails IDK why
-
-// it('checks contract addresses', function(){
-//     return DappToken.deployed().then(function(instance) {
-//         tokenInstance = instance;
-//         //assert.equal(tokenInstance.address, '0xE4d5F10fF5C453c524119Aa614E56b661B5D55E7', 'token address match');
-//         return DappTokenSale.deployed();
-//     }).then(function(instance) {
-//         tokenSaleInstance = instance;
-//         //assert.equal(tokenSaleInstance.address, '0x6AcE6170288f4966dC53a08cB2d93dbec31109BA', 'tokensale address match');
-
-//     })
-// })
-
 it('facilitates token buying', function() {
     return DappToken.deployed().then(function(instance) {
       // Grab token instance first
